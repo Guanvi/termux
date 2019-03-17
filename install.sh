@@ -8,6 +8,7 @@ apt install vim zsh git curl wget python python-dev nmap openssh clang
 
 git clone https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/plugins/zsh-syntax-highlighting
+cp -f .zshrc ~/.zshrc
 chsh -s zsh
 source ~/.zshrc
 
