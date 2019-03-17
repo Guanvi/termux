@@ -5,9 +5,9 @@ if [ $?=0 ]
 then
 pkg update
 apt install vim zsh git curl wget python python-dev nmap openssh clang
-cd ~/
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" &> null.txt && rm null.txt
-(git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my.zsh/plugins/zsh-syntax-highlighting)
+
+git clone https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my.zsh/plugins/zsh-syntax-highlighting
 chsh -s zsh
 source ~/.zshrc
 
